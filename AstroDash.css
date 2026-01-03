@@ -238,4 +238,18 @@ button#decelerazione {
 button#decelerazione:hover {
     background-color: #ca42ff;
     box-shadow: 0px 0px 15px #ca42ff;
+
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    main {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 12px;
+        margin: 10px;
+    }
 }
