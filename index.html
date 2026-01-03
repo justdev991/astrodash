@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroDash</title>
+    <meta name="author" content="justdev">
+    <meta name="description" content="Frontend interactive dashboard">
+
+    <link rel="stylesheet" href="AstroDash.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="sezioneIniziale">
+        <h1 id="titoloPagina">AstroDash</h1>
+    </header>
+    <main id="sezionePrincipale">
+        <div id="inputMessaggi">
+            <input id="messaggio" type="text" placeholder="Inserire messaggio per la squadra">
+            <button id="invia">Invia</button>
+        </div>
+        <div id="informazioniAstronave">
+            <p id="ossigeno">OSSIGENO: <strong>100%</strong></p>
+            <p id="carburante">CARBURANTE: <strong>100%</strong></p>
+            <p id="velocita">VELOCITÀ: <strong>0 km/h</strong></p>
+            <p id="statoMotori">STATO MOTORI: <strong>OFF</strong></p>
+        </div>
+        <button id="accendiMotori">AVVIO MOTORI</button>
+        <button id="spegniMotori">SPEGNIMENTO MOTORI</button>
+        <div id="funzioniSecondarie">
+            <button id="rifornisciOssigeno">RIFORNISCI OSSIGENO</button>
+            <button id="rifornisciCarburante">RIFORNISCI CARBURANTE</button>
+            <button id="decelerazione">RALLENTA NAVICELLA</button>
+        </div>
+        <div id="listaMessaggi"></div>
+        <div id="messaggiAutomatici"></div>
+    </main>
+
+    <script src="./AstroDash.js"></script>
+</body>
+</html>

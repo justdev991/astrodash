@@ -1,0 +1,241 @@
+/* STILE GENERALE */
+
+body {
+    background-color: #0b0e14;
+    color: rgb(155, 165, 174);
+    font-family: "Orbitron", sans-serif;
+}
+
+.orbitron-astroDash {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* STILE HEADER */
+
+header#sezioneIniziale {
+    color: rgb(155, 165, 174);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+h1#titoloPagina {
+    margin: 0px;
+}
+
+/* STILE MAIN */
+
+main {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin: 20px 5%;
+}
+
+/* STILI DIV */
+
+div#informazioniAstronave {
+    border: double 5px white;
+    border-radius: 5px;
+    background-color: #161b22;
+    padding: 10px;
+}
+
+div#inputMessaggi {
+    border: double 5px white;
+    border-radius: 5px;
+    background-color: #161b22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+div#inputMessaggi input {
+    height: 2.5vw;
+    width: 15vw;
+    background-color: #0b0e14;
+    color: white;
+    border: solid 3px white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div#inputMessaggi button {
+    height: 2vw;
+    width: 5vw;
+    background-color: #bc13fe;
+    color: rgb(205, 205, 205);
+    font-weight: 800;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+div#inputMessaggi button:hover {
+    background-color: #c635ff;
+    box-shadow: 0px 0px 10px #c635ff;
+}
+
+p#ossigeno, p#carburante {
+    color: #00f2ff;
+    transition: all 0.2s ease-in-out;
+}
+
+p#ossigeno:hover, p#carburante:hover {
+    text-shadow: 0px 0px 15px #00f2ff;
+}
+
+p#statoMotori {
+    color: red;
+}
+
+div#listaMessaggi {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;  
+}
+
+.classeMessaggio {
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 2vw;
+    padding: 10px;
+    background-color: #161b22;
+    color: #a0adba;
+    border: double 5px white;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.classeMessaggio:hover {
+    background-color: #a0adba;
+    color: #161b22;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px white;
+    border-color: #161b22;
+}
+
+div#messaggiAutomatici {
+    grid-column: 3/5;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.messaggioAutomatico {
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 2vw;
+    padding: 10px;
+    background-color: rgba(0, 242, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #ff5f00;
+    border: solid 2px white;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.messaggioAutomatico:hover {
+    background-color: #ff5f00;
+    color: #161b22;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px white;
+    border-color: #161b22;
+    letter-spacing: 1px;
+    filter: brightness(1.2);
+}
+
+div#funzioniSecondarie {
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4vw;
+    gap: 15px;
+}
+
+.missioneFallita {
+    font-size: 2vw;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #161b22;
+    border: double 5px #161b22;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #8b0000;
+}
+
+/* STILE BOTTONI */
+
+button#accendiMotori {
+    border-radius: 5px;
+    background-color: #ff8c00;
+    font-size: 130%;
+    font-weight: 700;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    font-family: "Orbitron", sans-serif;
+}
+
+button#accendiMotori:hover {
+    background-color: #ffbf00;
+    box-shadow: 0px 0px 15px #ffbf00;
+}
+
+button#spegniMotori {
+    border-radius: 5px;
+    background-color: #8b0000;
+    font-size: 130%;
+    font-weight: 700;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    font-family: "Orbitron", sans-serif;
+}
+
+button#spegniMotori:hover {
+    background-color: #ff0000;
+    box-shadow: 0px 0px 15px #ff0000;
+}
+
+div#funzioniSecondarie button {
+    border-radius: 7px;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 800;
+    font-family: "Orbitron", sans-serif;
+}
+
+button#rifornisciOssigeno {
+    background-color: #1020ff;
+    transition: all 0.3s ease-in-out;
+}
+
+button#rifornisciOssigeno:hover {
+    background-color: #2433ff;
+    box-shadow: 0px 0px 15px #2433ff;
+}
+
+button#rifornisciCarburante {
+    background-color: #2bc500;
+    transition: all 0.3s ease-in-out;
+}
+
+button#rifornisciCarburante:hover {
+    background-color: #37ff00;
+    box-shadow: 0px 0px 15px #37ff00;
+}
+
+button#decelerazione {
+    background-color: #bc13fe;
+    transition: all 0.3s ease-in-out;
+}
+
+button#decelerazione:hover {
+    background-color: #ca42ff;
+    box-shadow: 0px 0px 15px #ca42ff;
+}
