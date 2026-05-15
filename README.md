@@ -13,7 +13,7 @@
 - **JavaScript (ES6+):** Motore di calcolo per i parametri vitali dell'astronave.
 
 ## 👤 Autore
-Progettato e sviluppato da **justdev991**.
+Progettato e sviluppato da **jarno**.
 
 ---
 *Creato per esplorare le frontiere dello sviluppo web e della simulazione spaziale.*
