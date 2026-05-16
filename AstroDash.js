@@ -100,7 +100,7 @@ let intervalloVelocita;
 function controlli() {
     let messaggioAutomatico = document.createElement('p');
 
-    if (motori === true && valoreOssigeno <= 10 && valoreOssigeno > 0) {
+    if (motori === true && valoreOssigeno < 10 && valoreOssigeno > 0) {
         clearInterval(intervalloOssigeno);
         clearInterval(intervalloCarburante);
         clearInterval(intervalloVelocita);
